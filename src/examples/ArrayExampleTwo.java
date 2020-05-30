@@ -14,7 +14,7 @@ public class ArrayExampleTwo {
 
         float[] temperaturesWeek = new float[7];
         for (int i = 0; i < temperaturesWeek.length; i++) {
-            temperaturesWeek[i] = ThreadLocalRandom.current().nextInt(-10, 20);
+            temperaturesWeek[i] = (float) ThreadLocalRandom.current().nextDouble(-10, 20);
         }
         String[] weekDays = {"Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"};
 
@@ -34,7 +34,7 @@ public class ArrayExampleTwo {
             }
 
         }
-        System.out.println("The max temperture  --> " + max);
+        System.out.printf("The max temerature is %1.1f\n",max);
 
 
         System.out.println("Example  End " + NUMBER);
